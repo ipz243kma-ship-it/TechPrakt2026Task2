@@ -32,3 +32,45 @@ body {
   margin: 35px auto;
   padding: 0 20px;
 }
+
+.news-card {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 26px;
+  padding: 22px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.news-card img {
+  width: 290px;
+  height: 180px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.news-content h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.news-content p {
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+@media (max-width: 720px) {
+  .news-card {
+    flex-direction: column;
+  }
+
+  .news-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+}
